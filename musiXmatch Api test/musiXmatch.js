@@ -23,6 +23,7 @@ $('.divs').empty()
             q_song: song,
             q_artist: artist,
             s_track_rating: desc,
+            page_size: 5,
             format:"jsonp",
             callback:"jsonp_callback"
         },
@@ -37,12 +38,13 @@ $('.divs').empty()
         console.log(data)
         for(var i = 0; i < data.message.body.track_list.length; i++) {
             console.log(data.message.body.track_list[i].track.track_name)
+            console.log(data.message.body.track_list[i].track.track_edit_url)
             var track = data.message.body.track_list[i].track.track_name
-          
          
-            var $div = $('<div>').addClass('tracks')
-            $div.append(track)
-            $('.divs').append($div)
+        
+            var $a = $('<a>').addClass('waves-effect waves-light pulse red btn').text(track)
+             $a.append('<i class="material-icons left">youtube_search_for</i>')
+            $('.divs').append($a)
         }
     })
 }
