@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="assets/css/reset.css">
     <!-- Materialize Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!-- Stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css">
 
@@ -35,7 +36,7 @@
 <body class="grey lighten-5">
     <div class="row" style=" margin-top: 20px; border-bottom-style: solid; border-bottom-width: 4px; border-bottom-color: #7b1fa2;">
         <div class="col s12 grey lighten-5">
-            <div class="col s5 offset-s1 purple darken-2">
+            <div class="col s4 offset-s1 purple darken-2">
                 <h2>
                     Fifty Shades of Purple
                 </h2>
@@ -54,14 +55,12 @@
                     Artist Name:
                 </h3>
                 <br>
-                <div class="input-field col s6">
+                <div id="inputDiv" class="input-field col s6">
                     <input id="artistName" type="text" class="validate">
                 </div>
                 <br>
             </form>
-            <button class="btn waves-effect waves-light purple lighten-0" type="submit" name="action">
-                Submit
-            </button>
+            <button id="searchButton" class="btn-large waves-effect waves-light purple lighten-0" type="submit" name="action"><i class="material-icons right">search</i>Search</button>
         </div>
         <div class="col s5 offset-s1 purple lighten-2 video-responsive" id="youtubeBox">
 
