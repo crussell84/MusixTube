@@ -1,4 +1,10 @@
-
+body{
+   
+  background-image: url("../images/mooncat.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%; 
+  background-color: #030108;
+}
 
 #youtubeRow{
 
