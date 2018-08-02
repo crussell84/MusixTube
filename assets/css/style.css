@@ -6,11 +6,30 @@ body{
   background-color: #030108;
 }
 
+
+h2{
+
+  text-align: center;
+  color: antiquewhite;
+  font-size: 36px;
+}
+
 #youtubeRow{
 
   height:420px;
   margin:0px;
-  
+}
+
+h3{
+
+  text-align: center;
+  color: antiquewhite;
+  font-size: 36px;
+  background-color: #7b1fa2;
+  padding: 10px;
+  margin-right: 125px;
+  margin-left: 125px;
+  border-radius: 25px;
 
 }
 
@@ -20,12 +39,23 @@ body{
   padding: 5px;
 }
 
+#inputDiv{
+
+  width: 400px;
+
+}
 
   #artistName{
     color: rgb(0, 0, 0);
-    background-color: rgb(142, 44, 184);
+    background-color: #7b1fa2;
     border-bottom: 1px solid #000;
     box-shadow: 0 1px 0 0 #000;
+  }
+
+  #searchButton{
+
+    border-radius: 5px;
+
   }
 
        
