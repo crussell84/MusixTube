@@ -20,95 +20,89 @@
     <!-- Stylesheet -->
     <link rel="stylesheet" href="assets/css/style.css">
 
-
-    <!-- JAVASCRIPT & JQUERY IMPORTS-->
-
-    <!-- LINK TO FIREBASE GOES HERE -->
-    <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-    <!-- Materialize Compiled and minified JavaScript -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
-    <!-- Javascript -->
-    <script src="assets/js/main.js"></script>
+    
 </head>
 
-<body class="grey lighten-5">
-    <div class="row" style=" margin-top: 20px; border-bottom-style: solid; border-bottom-width: 4px; border-bottom-color: #7b1fa2;">
-        <div class="col s12 grey lighten-5">
-            <div class="col s4 offset-s1 purple darken-2">
-                <h2>
-                    Fifty Shades of Purple
-                </h2>
-            </div>
+<body>
+        <div class="container-fluid">
 
-        </div>
-    </div>
-    <div class="row">
-        <div class="section grey lighten-5">
-        </div>
-    </div>
-    <div class="row" id="youtubeRow">
-        <div class="col s5 purple lighten-2">
-            <form>
-                <h3>
-                    Artist Name:
-                </h3>
-                <br>
-                <div id="inputDiv" class="input-field col s6">
-                    <input id="artistName" type="text" class="validate">
+            <div class="row" style=" margin-top: 20px; border-bottom-style: solid; border-bottom-width: 4px; border-bottom-color: #7b1fa2;">
+                <div class="col s12 grey lighten-5">
+                    <div class="col s4 offset-s1 purple darken-2">
+                        <h2>
+                            Fifty Shades of Purple
+                        </h2>
+                    </div>
+                    
                 </div>
-                <br>
-            </form>
-            <button id="searchButton" class="btn-large waves-effect waves-light purple lighten-0" type="submit" name="action"><i class="material-icons right">search</i>Search</button>
-        </div>
-        <div class="col s5 offset-s1 purple lighten-2 video-responsive" id="youtubeBox">
-
-        </div>
-    </div>
-    </div>
-    <div class="row">
-        <div class="col s6 purple lighten-2">
-            <p>
-                This is where our artist's top 5 tracks will go.
-            </p>
-
-            <table>
-                <thead>
-                    <tr>
-                        <th>Song Name</th>
-                    </tr>
-                </thead>
-
-                <tbody>
-                    <tr>
-                        <td>---</td>
-                    </tr>
-                    <tr>
-                        <td>---</td>
-                    </tr>
-                    <tr>
-                        <td>---</td>
-                    </tr>
-                    <tr>
-                        <td>---</td>
-                    </tr>
-                    <tr>
-                        <td>---</td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </div>
-</body>
-<footer class="page-footer purple darken-3" style="border-top-style: solid; border-top-width: 4px; border-top-color: #bdbdbd;">
-    <div class="container">
-        <div class="row">
-            <div class="col l6 s12">
-                <h5 class="white-text">Footer Content</h5>
+            </div>
+            <div class="row">
+                <div class="section grey lighten-5">
+                </div>
+            </div>
+            <div class="row" id="youtubeRow">
+                <div class="col s5 purple lighten-2">
+                    <form>
+                        <h3>
+                            Artist Name:
+                        </h3>
+                        <br>
+                        <div id="inputDiv" class="input-field col s6">
+                            <input id="artistName" type="text" class="validate">
+                        </div>
+                        <br>
+                    </form>
+                    <button id="searchButton" class="btn-large waves-effect waves-light purple lighten-0 submit" type="submit" name="action"><i class="material-icons right">search</i>Search</button>
+                </div>
+                <div class="col s5 offset-s1 purple lighten-2 video-responsive" id="youtubeBox">
+                    
+                </div>
             </div>
         </div>
+        <div class="row">
+            <div class="col s4">
+                
+                <p class="white-text">
+                    This is where our artist's top 5 tracks will go.
+                </p>
+                <!-- So this is just an example of some of the materialize classes -->
+                <table class="striped highlight centered responsive-table">
+                    <thead class="purple darken-2">
+                        <tr class="white-text">
+                            <th>Song Name</th>
+                        </tr>
+                    </thead>
+                    
+                    <tbody class="tbody">
+                        <!-- we can leave this open and append each tr from jquery -->
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        <footer class="page-footer purple darken-3" style="border-top-style: solid; border-top-width: 4px; border-top-color: #bdbdbd;">
+            <div class="container">
+                <div class="row">
+                    <div class="col l6 s12">
+                        <h5 class="white-text">Footer Content</h5>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
-</footer>
-
-</html>
+        
+        
+        <!-- I moved these down here so the load after html :) -->
+        <!-- JAVASCRIPT & JQUERY IMPORTS-->
+        
+        <!-- LINK TO FIREBASE GOES HERE -->
+        <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+        <!-- jQuery -->
+        <script src="https://code.jquery.com/jquery.js"></script>
+        <!-- Materialize Compiled and minified JavaScript -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-rc.2/js/materialize.min.js"></script>
+        <!-- Javascript -->
+        <script src="./assets/javascript/musixAPI.js"></script>
+    </body>
+    
+    
+    </html>
