@@ -4,6 +4,19 @@ body{
   background-repeat: no-repeat;
   background-size: 100%; 
   background-color: #030108;
+  font-family: Arial;
+}
+
+
+h2{
+
+  font-weight: bold;
+  font-family: 'Ubuntu' sans-serif;
+  text-align: center;
+  color: antiquewhite;
+  font-size: 44px;
+  text-align: center;
+  padding-bottom: 10px;
 }
 
 
@@ -83,10 +96,61 @@ h3{
   }
 
        
-  footer{
+  .page-footer.container.row {
     display: flex;
-    min-height: 30vh;
     flex-direction: column;
     flex: 1 0 auto;
+    text-align: center;
+    background-color: none ;
+
   }
 
+
+
+ 
+
+* {
+    box-sizing: border-box;
+}
+
+form.example input[type=text] {
+    padding: 5px;
+    font-size: 17px;
+    border: 1px solid grey;
+    float: left;
+    width: 10%;
+    background: #f1f1f1;
+    border-radius: 5px;
+}
+
+form.example button {
+    float: left;
+    width: 10%;
+    padding: 5px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 1px solid grey;
+    border-left: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+form.example button:hover {
+    background: #0b7dda;
+}
+
+form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.card-title{
+    color: #330033;
+    
+}
+
+.card-action{
+  border-radius: 5px;
+}
