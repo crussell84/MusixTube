@@ -19,6 +19,16 @@ h2{
   padding-bottom: 10px;
 }
 
+
+h2{
+
+  font-weight: bold;
+  font-family: 'Bree Serif', serif;
+  text-align: center;
+  color: antiquewhite;
+  font-size: 44px;
+}
+
 #youtubeRow{
 
   height:420px;
