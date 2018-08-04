@@ -43,8 +43,8 @@ $(function () {
 
                 //So this is working, but im sure we are going to have to add more when we incorporate the youtube api
                 //Buttons are ugly right now... figured this is still kind of a rough draft... but good to know it works
-                var $btn = $('<a>').addClass('waves-effect waves-light btn pulse purple').text(track)
-                    .append(`<i class="material-icons left">youtube_search_for</i>`)
+                var $btn = $('<a>').addClass('waves-effect waves-light btn pulse purple track').text(track)
+                    .append(`<i class="material-icons left">youtube_search_for</i>`).attr('data-track', track);
                 //this took me a bit to figure out how to get each button into a different row, but this seems to work well
                 var $td = $('<td>').append($btn)
                 var $row = $('<tr>').append($td) 
