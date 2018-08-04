@@ -9,9 +9,11 @@ body{
 
 h2{
 
+  font-weight: bold;
+  font-family: 'Bree Serif', serif;
   text-align: center;
   color: antiquewhite;
-  font-size: 36px;
+  font-size: 44px;
 }
 
 #youtubeRow{
@@ -22,6 +24,7 @@ h2{
 
 h3{
 
+  font-family: 'Kanit', sans-serif;
   text-align: center;
   color: antiquewhite;
   font-size: 36px;
@@ -29,7 +32,7 @@ h3{
   padding: 10px;
   margin-right: 125px;
   margin-left: 125px;
-  border-radius: 25px;
+  border-radius: 30px;
 
 }
 
@@ -69,6 +72,13 @@ h3{
   #searchButton{
 
     border-radius: 5px;
+
+  }
+
+  th{
+
+      font-family: 'Arvo', serif;
+      font-weight: bold;
 
   }
 
