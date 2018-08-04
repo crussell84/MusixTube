@@ -7,11 +7,35 @@ body{
   font-family: Arial;
 }
 
+
+h2{
+
+  font-weight: bold;
+  font-family: 'Ubuntu' sans-serif;
+  text-align: center;
+  color: antiquewhite;
+  font-size: 44px;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
 #youtubeRow{
 
   height:420px;
   margin:0px;
-  
+}
+
+h3{
+
+  font-family: 'Kanit', sans-serif;
+  text-align: center;
+  color: antiquewhite;
+  font-size: 36px;
+  background-color: #7b1fa2;
+  padding: 10px;
+  margin-right: 125px;
+  margin-left: 125px;
+  border-radius: 30px;
 
 }
 
@@ -21,12 +45,44 @@ body{
   padding: 5px;
 }
 
+#inputDiv{
+
+  width: 400px;
+
+}
 
   #artistName{
     color: rgb(0, 0, 0);
-    background-color: rgb(142, 44, 184);
+    background-color: #7b1fa2;
     border-bottom: 1px solid #000;
     box-shadow: 0 1px 0 0 #000;
+  }
+
+
+  .video-responsive{
+    overflow:hidden;
+    padding-bottom:56.25%;
+    position:relative;
+    height:0;
+}
+.video-responsive iframe{
+    left:0;
+    top:0;
+    height:100%;
+    width:100%;
+    position:absolute;
+}
+  #searchButton{
+
+    border-radius: 5px;
+
+  }
+
+  th{
+
+      font-family: 'Arvo', serif;
+      font-weight: bold;
+
   }
 
        
@@ -41,9 +97,7 @@ body{
 
 
 
-  /*h2{
-    font-family: 'Ubuntu', sans-serif;
-  }*/
+ 
 
 * {
     box-sizing: border-box;
@@ -85,11 +139,6 @@ form.example::after {
 .card-title{
     color: #330033;
     
-}
-
-h2{
-  text-align: center;
-  padding-bottom: 10px;
 }
 
 .card-action{
