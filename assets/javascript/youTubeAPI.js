@@ -2,6 +2,9 @@ $(document).ready(function () {
     
     $(document).on("click", '.track', function (event) {
         var track = $(this).attr('data-track');
+        $('#youtubeBox').empty();
+        $('.hides').remove();
+        $('.collection').fadeIn(1000);
         youtubeApiCall(track);
         console.log("ON CLICK");
         return false;
