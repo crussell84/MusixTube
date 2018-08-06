@@ -84,11 +84,13 @@ $(function () {
             //alright this shows us the last 5 searches (def needs a little styling love)
             database.ref('searches/').orderByChild('artist') //limits the amound appended to 5. 
         .limitToLast(5).on('value', function (snapshot) {
+            $('.emptyMe').empty('.emptyMe');
             snapshot.forEach(function(childSnapshot) {
                 console.log(`CHILD SNAP YO ${childSnapshot.val()}`);
                 var topChildren = childSnapshot.val();
-                $('.collection-header').append(`<li class='collection-item'>${topChildren.search}</li>`)
-
+               
+                $('.emptyMe').append(`<li class='collection-item'>${topChildren.search}</li>`)
+                console.log(topChildren.search)
             })
         })
 
@@ -103,7 +105,8 @@ $(function () {
     }
 
     // var jiggle = anime({
-    //     target: '.hides',
+    //     target: '.anime .input',
+    //     translateY: 300
         
     // })
 
