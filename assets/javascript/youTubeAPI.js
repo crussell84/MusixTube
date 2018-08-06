@@ -4,7 +4,8 @@ $(document).ready(function () {
         var track = $(this).attr('data-track');
         $('#youtubeBox').empty();
         $('.hides').remove();
-        $('.collection').fadeIn(1000);
+        $('.collection').hide();
+        $('.collection').show();
         youtubeApiCall(track);
         console.log("ON CLICK");
         return false;
