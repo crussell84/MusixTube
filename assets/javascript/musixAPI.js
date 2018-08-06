@@ -102,6 +102,11 @@ $(function () {
 
     }
 
+    // var jiggle = anime({
+    //     target: '.hides',
+        
+    // })
+
     $('.parallax').parallax();
 })
 
