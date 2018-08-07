@@ -1,10 +1,12 @@
 $(document).ready(function () {
     
+  
     $(document).on("click", '.track', function (event) {
         var track = $(this).attr('data-track');
         $('#youtubeBox').empty();
         $('.hides').remove();
         $('.collection').hide();
+        $('.collection').addClass('animated slideInDown')
         $('.collection').show();
         youtubeApiCall(track);
         console.log("ON CLICK");

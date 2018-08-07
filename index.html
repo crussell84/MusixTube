@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <title>Project#1</title>
+    <title>MusiXTube - Home</title>
 
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -22,101 +22,81 @@
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Arvo|Bree+Serif|Kanit" rel="stylesheet">
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="assets/css/style.css">
 
+    <link rel="stylesheet" href="./assets/css/animate.css">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
 
 </head>
 
 <body>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col s12 ">
-                <div class="col s10 col l5 offset-l4 purple lighten-2" style="border-radius: 5px; font-family: 'Ubuntu' sans-serif">
-                    <h2>
-                        Musixtube
-                    </h2>
-                </div>
-
-            </div>
+    <nav>
+        <div class="nav-wrapper purple darken-2">
+            <a href="#" class="brand-logo center" style="font-family: 'Ubuntu', sans-serif; font-size: 55px;">MusiXTube</a>
         </div>
-    </div>
-    <div class="row">
-        <div class="section ">
+
+    </nav>
+    <div class="parallax-container valign-wrapper">
+        <div class="parallax">
+            <img src="assets/images/mooncat.jpg">
         </div>
-    </div>
-
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col s12 m6">
-                <div class="card purple lighten-5" style="border-radius: 5px">
-                    <div class="card-content white-text">
-                        <span class="card-title">Artist Name:</span>
-                    </div>
-                    <div class="card-action" style="border-radius: 5px">
-                        <div class="row">
-                            <form class="col s12">
-                                <div class="row">
-                                    <div class="input-field col s6">
-                                        <input id="icon_prefix" type="text" class="validate">
-                                        <label for="icon_prefix">Search</label>
-                                    </div>
-                                    <button id="searchButton" class="btn-large waves-effect waves-light purple lighten-0 submit" style="font-family: 'Kanit', sans-serif;"
-                                        type="submit" name="action">
-                                        <i class="material-icons right">search</i>Search</button> 
-                                </div>
-                            </form>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-            <div class="offset-l1 col l5 video-responsive" id="youtubeBox"></div>
-        </div>
-    </div>
-
-
-
-
-
-    <div class="container-fluid">
-        <div class="row">
-           
-
-                <table class="z-depth-5 col s12 col l6 striped highlight centered responsive-table">
-                    <thead class="purple darken-2">
-                        <tr class="white-text">
-                            <th>
-                                <i class="material-icons">music_note</i>Song Name</th>
-                        </tr>
-                    </thead>
-
-                    <tbody class="tbody">
-                        <!-- we can leave this open and append each tr from jquery -->
-                    </tbody>
-                </table>
-                <div class="test offset-l1 col l5">
-                        <ul class="collection with-header col l12">
-                                <li class="collection-header">
-                                    <h4>Recently Searched</h4>
-                                </li>
-                            </ul>
-                </div>
-         
-        </div>
-    </div>
-
- 
-    <footer class="page-footer transparent">
         <div class="container">
             <div class="row">
-              
-                <div class="footer-copyright">
-                    <h6 class="center-align"> © 2014 Copyright Text</h6>
+                <ul class="collection with-header col l4 white">
+                    <li class="collection-header">
+                        <h4>Recently Searched</h4>
+                    </li>
+                    <div class="emptyMe"></div>
+                </ul>
+                <div class="white-text hides offset-l3 center-align">
+
+                    <h3 class="animated fadeInUpBig">Search for an Artist to get the top 5 songs!</h3>
                 </div>
+                <div class="col l4 offset-l2" id="youtubeBox">
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <div class="section white">
+        <div class="row container">
+            <form>
+                <div class="input-field col s4">
+                    <input type="text" class="validate" id="artistName">
+                    <label for="Artist">Artist</label>
+                    <div class="offset-l7 col l10">
+                        <button class="z-depth-5 btn waves-effect waves-light purple lighten-0 submit" type="submit" name="action">
+                            <i class="material-icons right">search</i>Search</button>
+                    </div>
+                </div>
+            </form>
+            <table class="first z-depth-5 bordered white-text highlight striped responsive-table centered grey darken-4 col l4 offset-l3">
+                <thead>
+                    <tr>
+                        <th>Song Name</th>
+                    </tr>
+                </thead>
+                <tbody class="tbody">
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <div class="parallax-container">
+        <div class="parallax">
+            <img src="assets/images/star.png">
+        </div>
+    </div>
+
+    <footer class="page-footer purple darken-2" style="height: 150px;">
+
+        <div class="footer-copyright  purple darken-2 center-align">
+            <div class="container">
+                © 2018 Copyright Text
             </div>
         </div>
     </footer>
-
     <!-- LINK TO FIREBASE GOES HERE -->
     <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
     <!-- jQuery -->
