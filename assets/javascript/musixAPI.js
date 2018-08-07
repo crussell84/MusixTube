@@ -81,7 +81,7 @@ $(function () {
                         console.log(`CHILD SNAP YO ${childSnapshot.val()}`);
                         var topChildren = childSnapshot.val();
 
-                        $('.emptyMe').append(`<li class='collection-item animated shake purple white-text'>${topChildren.search}</li>`)
+                        $('.emptyMe').append(`<li class='collection-item animated shake purple white-text center-align'>${topChildren.search}</li>`)
                         console.log(topChildren.search);
                     })
                 })
