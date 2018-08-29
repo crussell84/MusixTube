@@ -4,7 +4,7 @@
 
 ## To View Live
 
-* Go to: https://crussell84.github.io/teamAwesomeCoders/ 
+* Go to: https://crussell84.github.io/MusixTube/ 
 
 ## Install Locally
 
