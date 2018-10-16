@@ -4,7 +4,7 @@
 
 ## To View Live
 
-* Go to: https://crussell84.github.io/MusixTube/ 
+* Go to: https://www.startwithaskateboard.com/musixTube
 
 ## Install Locally
 
